@@ -1,4 +1,3 @@
-
 import axios from "axios";
 
 export default async function page() {
@@ -8,7 +7,7 @@ export default async function page() {
                 resolve(true);
             }, 2000);
       })
-        const response = await axios.get("http://localhost:3000/api/user");
+        const response = axios.get("http://localhost:3000/api/user");
  
 
     return <div className="flex flex-col justify-center h-screen">
